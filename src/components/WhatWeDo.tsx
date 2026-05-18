@@ -1,8 +1,10 @@
 import { useScrollReveal } from '../hooks/useScrollReveal';
-import { BookOpen, Smile, Apple, Heart } from 'lucide-react';
+import { BookOpen, Smile, Apple, Heart, ArrowRight } from 'lucide-react';
+import type { ServiceType } from './WhatWeDoDetail';
 
-const offerings = [
+const offerings: { key: ServiceType; icon: typeof BookOpen; title: string; desc: string; color: string; iconColor: string; iconBg: string }[] = [
   {
+    key: 'education',
     icon: BookOpen,
     title: 'Education',
     desc: 'We provide basic education for children aged 4-9 years, especially those unable to access mainstream schooling. Every child learns at their own pace with customized teaching, building confidence, discipline, and curiosity.',
@@ -11,6 +13,7 @@ const offerings = [
     iconBg: 'bg-sky-100',
   },
   {
+    key: 'daycare',
     icon: Smile,
     title: 'Day Care',
     desc: 'We support younger siblings aged 1.5-3.5 years with a safe, nurturing environment. Children receive care, attention, play-based learning, and early childhood development support while parents work.',
@@ -19,6 +22,7 @@ const offerings = [
     iconBg: 'bg-amber-100',
   },
   {
+    key: 'nutrition',
     icon: Apple,
     title: 'Nutrition',
     desc: 'Good nutrition is essential for learning and growth. We provide freshly prepared lunch and daily snacks to ensure children receive healthy, nourishing meals in a consistent and caring environment.',
@@ -27,6 +31,7 @@ const offerings = [
     iconBg: 'bg-emerald-100',
   },
   {
+    key: 'wellbeing',
     icon: Heart,
     title: 'Mental & Physical Well-being',
     desc: 'A child learns better when they feel safe, healthy, and emotionally supported. We have in-house counselors and doctors who regularly support emotional well-being, health, hygiene, and overall development.',
@@ -36,7 +41,7 @@ const offerings = [
   },
 ];
 
-export default function WhatWeDo() {
+export default function WhatWeDo({ onServiceClick }: { onServiceClick?: (service: ServiceType) => void }) {
   const { ref, visible } = useScrollReveal();
 
   return (
@@ -69,16 +74,24 @@ export default function WhatWeDo() {
               <div
                 key={o.title}
                 ref={cardRef}
-                style={{ transitionDelay: `${i * 100}ms` }}
-                className={`${o.color} rounded-3xl p-8 transition-all duration-700 hover:shadow-lg hover:-translate-y-1 ${
-                  cardVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-                }`}
               >
-                <div className={`${o.iconBg} w-14 h-14 rounded-2xl flex items-center justify-center mb-5`}>
+                <button
+                  onClick={() => onServiceClick?.(o.key)}
+                  style={{ transitionDelay: `${i * 100}ms` }}
+                  className={`w-full group ${o.color} rounded-3xl p-8 transition-all duration-700 hover:shadow-lg hover:-translate-y-1 cursor-pointer text-left ${
+                    cardVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+                  }`}
+                >
+                <div className={`${o.iconBg} w-14 h-14 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform`}>
                   <Icon size={24} className={o.iconColor} />
                 </div>
-                <h3 className="text-slate-800 font-bold text-xl mb-3">{o.title}</h3>
-                <p className="text-slate-600 text-base leading-relaxed">{o.desc}</p>
+                <h3 className="text-slate-800 font-bold text-xl mb-3 group-hover:text-slate-900 transition-colors">{o.title}</h3>
+                <p className="text-slate-600 text-base leading-relaxed mb-4">{o.desc}</p>
+                <span className="inline-flex items-center gap-2 text-sky-600 font-semibold text-sm group-hover:gap-3 transition-all">
+                  Learn More
+                  <ArrowRight size={16} />
+                </span>
+                </button>
               </div>
             );
           })}
