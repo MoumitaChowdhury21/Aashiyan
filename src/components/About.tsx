@@ -42,11 +42,15 @@ export default function About() {
             </h2>
 
             <p className="text-slate-600 text-base leading-relaxed mb-5">
-              <strong className="text-slate-800">Aashiyan</strong> — meaning "nest" in Hindi — was born from a simple belief: every child deserves safety, warmth, and the chance to learn. We created this community school and daycare specifically for children of migrant workers who often face language barriers, lack of documents like Aadhaar cards, or constant relocation.
+              <strong className="text-slate-800">Aashiyan</strong> — At Aashiyan, we believe every child deserves a place to learn, grow, and feel safe. Many children of migrant workers are left out of formal education due to language barriers, lack of documents like Aadhaar cards, or constant relocation.
+
+
             </p>
 
             <p className="text-slate-600 text-base leading-relaxed mb-6">
-              We provide not just education, but nutritious meals, emotional support, creative activities, and the kind of nurturing environment that every child needs to thrive. We focus on discipline, life skills, and confidence — helping children feel seen, valued, and hopeful about their future.
+              Aashiyan was created to give these children a space to sit, learn, and belong. Along with basic education, we focus on discipline, life skills, confidence, and creating a nurturing environment where every child feels seen and valued.
+
+
             </p>
 
             <div className="bg-sky-50 rounded-2xl px-6 py-4 mb-8 border-l-4 border-sky-400">
