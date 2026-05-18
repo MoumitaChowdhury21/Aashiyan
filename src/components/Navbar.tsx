@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Heart } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const links = [
   { label: 'About', href: '#about' },
@@ -29,16 +29,11 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-5 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-full bg-amber-400 flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
-            <Heart size={14} className="text-white fill-white animate-heartbeat" />
-          </div>
-          <span
-            className={`font-display font-bold text-xl tracking-wide transition-colors ${
-              scrolled ? 'text-slate-800' : 'text-white'
-            }`}
-          >
-            Aashiyan
-          </span>
+          <img
+            src="/aashiyan-logo.svg"
+            alt="Aashiyan Logo"
+            className="h-12 w-auto group-hover:scale-105 transition-transform"
+          />
         </a>
 
         {/* Desktop nav */}
