@@ -98,7 +98,7 @@ export default function Footer() {
         <div className="border-t border-slate-800 pt-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
             <div className="flex flex-wrap gap-x-5 gap-y-2 justify-center sm:justify-start">
-              <span>NGO Reg. No: MH/2015/0045321</span>
+              <span>Registration No: BGR-4-00134-2021-22</span>
               <span>80G Certified</span>
               <span>12A Registered</span>
             </div>
