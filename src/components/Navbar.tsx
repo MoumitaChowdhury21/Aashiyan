@@ -3,11 +3,11 @@ import { Menu, X, Heart } from 'lucide-react';
 
 const links = [
   { label: 'About', href: '#about' },
-  { label: 'What We Do', href: '#services' },
+  { label: 'What We Do', href: '#whatwedo' },
   { label: 'Gallery', href: '#gallery' },
   { label: 'Impact', href: '#impact' },
   { label: 'Blog', href: '#blog' },
-  { label: 'Support', href: '#donate' },
+  { label: 'Get Involved', href: '#getinvolved' },
 ];
 
 export default function Navbar() {

@@ -42,12 +42,26 @@ export default function About() {
             </h2>
 
             <p className="text-slate-600 text-base leading-relaxed mb-5">
-              <strong className="text-slate-800">Aashiyan</strong> — meaning "nest" in Hindi — was born from a simple belief: every child deserves safety, warmth, and the chance to learn. We created this community school and daycare specifically for children of migrant workers who often move between cities, leaving their little ones without consistent schooling or care.
+              <strong className="text-slate-800">Aashiyan</strong> — meaning "nest" in Hindi — was born from a simple belief: every child deserves safety, warmth, and the chance to learn. We created this community school and daycare specifically for children of migrant workers who often face language barriers, lack of documents like Aadhaar cards, or constant relocation.
             </p>
 
-            <p className="text-slate-600 text-base leading-relaxed mb-8">
-              We provide not just education, but nutritious meals, emotional support, creative activities, and the kind of nurturing environment that every child needs to thrive. Aashiyan is their safe place — a nest where they are seen, heard, and celebrated.
+            <p className="text-slate-600 text-base leading-relaxed mb-6">
+              We provide not just education, but nutritious meals, emotional support, creative activities, and the kind of nurturing environment that every child needs to thrive. We focus on discipline, life skills, and confidence — helping children feel seen, valued, and hopeful about their future.
             </p>
+
+            <div className="bg-sky-50 rounded-2xl px-6 py-4 mb-8 border-l-4 border-sky-400">
+              <div className="text-slate-800 text-sm font-bold mb-1">Our Mission</div>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                To provide a safe, inclusive, and nurturing space for children from underserved communities through education, care, nutrition, and emotional support, helping them move towards mainstream learning and a better future.
+              </p>
+            </div>
+
+            <div className="bg-amber-50 rounded-2xl px-6 py-4 border-l-4 border-amber-400">
+              <div className="text-slate-800 text-sm font-bold mb-1">Our Vision</div>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                A world where every child, regardless of background or circumstance, has access to safety, learning, dignity, and opportunities to grow with confidence and hope.
+              </p>
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <div className="flex items-center gap-3 bg-sky-50 rounded-2xl px-5 py-4">
