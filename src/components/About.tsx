@@ -23,7 +23,7 @@ export default function About() {
             </div>
             {/* Floating card */}
             <div className="absolute -bottom-6 -right-4 md:-right-8 bg-white rounded-2xl shadow-lg px-5 py-4 max-w-[200px]">
-              <div className="text-3xl font-display font-bold text-amber-500 leading-none">2015</div>
+              <div className="text-3xl font-display font-bold text-amber-500 leading-none">2021</div>
               <div className="text-slate-500 text-xs font-semibold mt-1 leading-snug">Founded with a dream of equal childhood</div>
             </div>
             {/* Decorative blob */}
