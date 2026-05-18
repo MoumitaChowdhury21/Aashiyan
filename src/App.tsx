@@ -7,6 +7,11 @@ import WhatWeDoDetail from './components/WhatWeDoDetail';
 import Services from './components/Services';
 import Gallery from './components/Gallery';
 import Impact from './components/Impact';
+import DayAtAashiyan from './components/DayAtAashiyan';
+import ArtworkGallery from './components/ArtworkGallery';
+import ImpactStories from './components/ImpactStories';
+import Partners from './components/Partners';
+import Wishlist from './components/Wishlist';
 import Blog from './components/Blog';
 import GetInvolved from './components/GetInvolved';
 import Donate from './components/Donate';
@@ -43,7 +48,12 @@ export default function App() {
       <WhatWeDo onServiceClick={setSelectedService} />
       <Services />
       <Gallery />
+      <DayAtAashiyan />
+      <ArtworkGallery />
+      <ImpactStories />
       <Impact />
+      <Partners />
+      <Wishlist />
       <Blog />
       <GetInvolved />
       <Donate />
