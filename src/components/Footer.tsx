@@ -66,13 +66,13 @@ export default function Footer() {
               <li>
                 <a href="tel:+919876543210" className="flex items-center gap-3 text-sm text-slate-400 hover:text-amber-400 transition-colors">
                   <Phone size={15} className="text-amber-400 flex-shrink-0" />
-                  +91 98765 43210
+                  +91 9886262255
                 </a>
               </li>
               <li>
                 <a href="mailto:hello@aashiyan.org" className="flex items-center gap-3 text-sm text-slate-400 hover:text-amber-400 transition-colors">
                   <Mail size={15} className="text-amber-400 flex-shrink-0" />
-                  hello@aashiyan.org
+                  info@theshesaga.com
                 </a>
               </li>
             </ul>
